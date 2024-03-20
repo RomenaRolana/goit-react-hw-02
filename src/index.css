@@ -1,0 +1,84 @@
+:root {
+  --black: #000;
+  --light-grey: #f2f2f2; /* Lighter grey for a softer look */
+  --middle-grey: #d9d9d9;
+  --dark-grey: #1a1a1a; /* Darker grey for more contrast */
+  --grey: #bfbfbf;
+  --blue: #000; /* Using black to replace blue */
+  --accent-blue: #1a1a1a; /* Dark grey as accent color */
+  --white: #fff;
+  --red: #000; /* Using black to replace red */
+  --green: #000; /* Using black to replace green */
+
+  font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif; /* Changed to Roboto for a different feel */
+  line-height: 1.6; /* Slightly increased for better readability */
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--dark-grey);
+  background-color: var(--light-grey);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p, h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  font-weight: 500;
+  color: var(--black); /* Consistent black for links */
+  text-decoration: none; /* Removing underline from links */
+}
+a:hover {
+  color: var(--dark-grey); /* Hover effect with dark grey */
+}
+
+body {
+  font-family: 'Helvetica', sans-serif; /* Switching to Helvetica for a classic look */
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  padding: 20px;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.8em; /* Slightly reduced size for subtlety */
+  line-height: 1.2;
+}
+
+button {
+  border-radius: 4px; /* Smaller radius for a sharper look */
+  border: 2px solid var(--black); /* More pronounced border */
+  padding: 0.8em 1.4em; /* Adjusted padding for better fit */
+  font-size: 14px; /* Smaller font size for a refined look */
+  font-weight: 600; /* Bolder font weight for emphasis */
+  font-family: inherit;
+  cursor: pointer;
+
+  color: var(--black);
+  background-color: var(--white);
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out, border-color 250ms ease-in-out;
+}
+button:hover, button:focus {
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--white); /* Invert colors on hover/focus for contrast */
+}
